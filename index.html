@@ -5,8 +5,16 @@
     <title>portfolio</title>
     <link rel="stylesheet" type="text/css" href="./new_in_style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
+    <button class="scroll-top" id="js-button">
+        <!-- <i class="fa fa-chevron-up" aria-hidden="true">TOP</i> -->
+        <span class="material-icons">
+            keyboard_arrow_up
+        </span>
+    </button>
     <header id="home">
         <div class="menu_bar">
             <div class="h_logo">
@@ -93,5 +101,28 @@
     <footer id="contact">
     
     </footer>
+
+    <script type="text/javascript">
+        scrollTop('js-button', 200);
+        function scrollTop(elem,duration) {
+            let target = document.getElementById(elem);
+    
+            target.addEventListener('click', function() {
+                let currentY = window.pageYOffset; 
+                let step = duration/currentY > 1 ? 10 : 100;
+                let timeStep = duration/currentY * step;
+                let intervalID = setInterval(scrollUp, timeStep);
+    
+                function scrollUp(){
+                    currentY = window.pageYOffset;
+                    if(currentY === 0) {
+                        clearInterval(intervalID);
+                    } else {
+                        scrollBy( 0, -step );
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 </html>
