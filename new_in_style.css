@@ -27,6 +27,8 @@ li {
     padding: 0px 50px 0px 50px;
 }
 
+
+/* scroll-top btn section */
 .scroll-top {
     position: fixed;
     right: 20px;
@@ -43,6 +45,8 @@ li {
     cursor: pointer;
 }
 
+
+/* nav bar section */
 .menu_bar {
     width: 1680px;
     height: 100px;
@@ -61,6 +65,7 @@ li {
 }
 
 
+/* cover section */
 .cover {
     width: 1680px;
     height: 284px;
@@ -79,6 +84,9 @@ li {
     width: 364px;
     height: 284px;
 }
+
+
+/* introduce section */
 .introduce_warp {
     display: flex;
     width: 1680px;
@@ -121,6 +129,33 @@ li {
     text-shadow:0 0 #8CC270,0 0 #8CC270,0 0 #8CC270,0 0 #8CC270;
 }
 
+
+/* skill section */
+.skills_wrap {
+    width: 1680px;
+    height: 250px;
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+.skills {
+    width: 1680px;
+    height: 250px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills img {
+    width: 75px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-content: center;
+}
+
+
+/* project section */
 #project {
     display: flex;
     width: 1680px;
@@ -176,6 +211,8 @@ li {
     padding-top: 394px;
 }
 
+
+/* photo box section */
 .photo_box {
     width: 1680px;
     height: 380px;
