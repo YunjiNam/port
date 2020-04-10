@@ -71,7 +71,7 @@ main {
     position: fixed;
     top: 0;
     background-color: #2D2D2D;
-    z-index: 30;
+    z-index: 999;
 }
 .h_logo img {
     width: 50px;
@@ -346,8 +346,9 @@ main {
 .photo_box {
     width: 1680px;
     height: 380px;
-    display: grid;
-    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    display: flex;
+    /* display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr); */
 }
 
 .photo_warp {
@@ -356,33 +357,48 @@ main {
     height: 380px;
     display: flex;
     align-items: center;
-    grid-area: 1 / 1 / 2 / 3;
+    /* grid-area: 1 / 1 / 2 / 3; */
     margin: 150px 0px 150px 150px;
 }
 
 .photo_warp img {
     width: 233px;
     height: 233px;
-    padding-left: 5px;
+    /* margin-left: 5px; */
 }
-.photo_warp .photo1 {
+/* .photo_warp .photo1 {
     padding-left: 210px;
-}
+} */
 .photo_box p {
     font-size: 107px;
     font-weight: 900;
-    z-index: 20;
-    grid-area: 1 / 1 / 2 / 4;
+    z-index: 30;
+    /* grid-area: 1 / 1 / 2 / 4; */
     margin-top: 150px;
     margin-left: 300px;
+    position: absolute;
 }
+
+.img_box {
+    width: 233px;
+    height: 233px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+.img_box:nth-child(1) {
+    width: 233px;
+    height: 233px;
+    margin-left: 200px;
+    overflow: hidden;
+}
+
 .photos {
     transform: scale(1);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 .photos:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 /* ------------------------------ footer section */

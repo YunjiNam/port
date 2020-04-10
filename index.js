@@ -33,17 +33,19 @@ scrollTop('js-button', 200);
 //     major_click.addEventListener("click", major_img);
 // }
 // click_major();
+
+
 function change_img(event, imagename) {
     var i, tabcontent, tablinks;
     
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.querySelectorAll(".tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.querySelectorAll(".tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", " ");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
     document.getElementById(imagename).style.display = "inline-block";
