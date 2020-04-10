@@ -27,7 +27,7 @@ li {
     padding: 0px 50px 0px 50px;
 }
 main {
-    height: 2800px;
+    height: 4300px;
 }
 
 #major {
@@ -43,7 +43,7 @@ main {
 #coffee {
     display: none;
 }
-/* scroll-top btn section */
+/* ------------------------------ scroll-top btn section */
 .scroll-top {
     position: fixed;
     right: 20px;
@@ -62,7 +62,7 @@ main {
 }
 
 
-/* nav bar section */
+/* ------------------------------ nav bar section */
 .menu_bar {
     width: 1680px;
     height: 100px;
@@ -82,7 +82,7 @@ main {
 }
 
 
-/* cover section */
+/* ------------------------------ cover section */
 .cover {
     width: 1680px;
     height: 284px;
@@ -103,7 +103,7 @@ main {
 }
 
 
-/* introduce section */
+/* ------------------------------ introduce section */
 .introduce_warp {
     display: flex;
     width: 1680px;
@@ -202,7 +202,7 @@ main {
 } */
 
 
-/* skill section */
+/* ------------------------------ skill section */
 .skills_wrap {
     width: 1680px;
     height: 250px;
@@ -235,7 +235,7 @@ main {
     transform: scale(1.2);
 }
 
-/* project section */
+/* ------------------------------ project section */
 #project {
     display: flex;
     width: 1680px;
@@ -292,7 +292,57 @@ main {
 }
 
 
-/* photo box section */
+/*  ------------------------------  video section */
+.video_box {
+    width: 1680px;
+    height: 1200px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.video_wrap {
+    width: 1680px;
+    height: 1200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.video_title {
+    width: 1680px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+.video_content {
+    width: 1680px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.video_title p {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.app_video {
+    border: 1px solid #8CC270;
+}
+.video_text {
+    width: 1100px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 100;
+}
+.video_text p:nth-child(1) {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+/* ------------------------------ photo box section */
 .photo_box {
     width: 1680px;
     height: 380px;
@@ -326,13 +376,21 @@ main {
     margin-top: 150px;
     margin-left: 300px;
 }
+.photos {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.photos:hover {
+    transform: scale(1.3);
+}
 
-
-/*  */
+/* ------------------------------ footer section */
 .contact_box {
     width: 1680px;
     height: 250px;
     background-color: #ffffff;
+    display: flex;
 }
 
 .contact_box div {
