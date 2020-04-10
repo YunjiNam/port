@@ -48,31 +48,42 @@
             <div class="intro_box">
                 <p>Hi? My name is Yunji Nam.<br>
                 I Live in Seoul, South Korea. I’m 25 years old. <br>
-                My Major is <a href="#project" class="major">Digital Contents Design</a>. <br>
-                I like listening to <a href="" class="music">music</a> And watching <a href="" class="movie">movies</a>. <br>
-                So I like <a href="" class="netflix">Netflix</a> and <a href="" class="watcha">Watcha Play</a>! <br>
-                My favorite beer is <a href="" class="beer">Big Wave</a> that to drink at <a href="" class="location">Banpo Han River Park</a>. <br>
-                And I Like coffee! Especially <a href="" class="coffee">Starbucks Vanilla Cream Cold Brew</a>. <br>
-                I Like <a href="" class="pizza">UPP Pizza</a>(Itaewon).<br>
-                My Instagram is <a href="" class="insta">https://www.instagram.com/nnnamn_yj/</a>.<br>
-                Contact Me <a href="" class="github">Github</a> E-mail yj607252@gmail.com </p>
+                My Major is <a id="s_major" class="tablinks" onclick="change_img(event, 'major')">Digital Contents Design</a>. <br>
+                I like listening to <a class="music">music</a> And watching <a href="https://watcha.com/ko-KR/contents/mO2p7x5" target="_blank" class="movie">movies</a>. <br>
+                So I like <a href="https://www.netflix.com/kr/" target="_blank" class="netflix">Netflix</a> and <a href="https://play.watcha.net/start" target="_blank" class="watcha">Watcha Play</a>! <br>
+                My favorite beer is <a id="s_beer" class="tablinks" onclick="change_img(event, 'beer')">Big Wave</a> that to drink at <a class="location">Banpo Han River Park</a>. <br>
+                And I Like coffee! Especially <a id="s_coffee" class="tablinks" onclick="change_img(event, 'coffee')">Starbucks Vanilla Cream Cold Brew</a>. <br>
+                I Like <a id="s_pizza" class="tablinks" onclick="change_img(event, 'pizza')">UPP Pizza</a>(Itaewon).<br>
+                My Instagram is <a href="https://www.instagram.com/nnnamn_yj/" target="_blank" class="insta">https://www.instagram.com/nnnamn_yj/</a>.<br>
+                Contact Me <a href="https://github.com/YunjiNam" class="github">Github</a> E-mail yj607252@gmail.com </p>
                 <img src="./img/emoji.png">
             </div>
             <asid>
-                <img src="./img/f_photo@2x.png">
+                <div class="show_image_box">
+                    <!-- <div class="img_bg"></div> -->
+                    <!-- <div class="img_box"></div> -->
+                    <!-- <img id="default" class="tabcontent" src="./img/intro_img1@2x.png"> -->
+                    <div class="img_bg"></div>
+                    <div class="default_img"></div>
+                    <img id="major" class="tabcontent" src="./img/dicon.jpg">
+                    <img id="beer" class="tabcontent" src="./img/beer.jpg">
+                    <img id="coffee" class="tabcontent" src="./img/starbucks@2x.png">
+                    <img id="pizza" class="tabcontent" src="./img/upp@2x.png">
+                </div>
+                <!-- <img src="./img/f_photo@2x.png"> -->
             </asid>
         </div>
         <div class="skills_wrap" id="skill">
             <div class="skills">
-                <img src="./img/html_icon@2x.png">
-                <img src="./img/css_icon@2x.png">
-                <img src="./img/js_icon@2x.png">
-                <img src="./img/protopie_icon@2x.png">
-                <img src="./img/xd_icon@2x.png">
-                <img src="./img/Photoshop_icon@2x.png">
-                <img src="./img/Illustrator_icon@2x.png">
-                <img src="./img/Premiere_icon@2x.png">
-                <img src="./img/AfterEffects_icon@2x.png">
+                <img class="img_scale" src="./img/html_icon@2x.png">
+                <img class="img_scale" src="./img/css_icon@2x.png">
+                <img class="img_scale" src="./img/js_icon@2x.png">
+                <img class="img_scale" src="./img/protopie_icon@2x.png">
+                <img class="img_scale" src="./img/xd_icon@2x.png">
+                <img class="img_scale" src="./img/Photoshop_icon@2x.png">
+                <img class="img_scale" src="./img/Illustrator_icon@2x.png">
+                <img class="img_scale" src="./img/Premiere_icon@2x.png">
+                <img class="img_scale" src="./img/AfterEffects_icon@2x.png">
             </div>
         </div>
         <article id="project">
@@ -112,31 +123,15 @@
             </div>
         </article>
     </main>
-    <footer id="contact">
-    
+    <footer id="contact" class="contact_box">
+        <div>
+            <p>Contact</p>
+            <p><a>yj607252@gmail.com</a></p>
+            <p><a href="https://github.com/YunjiNam" target="_blank">Github</a></p>
+            <p><a href="https://www.instagram.com/nnnamn_yj/" target="_blank">Instagram</a></p>
+            <p><a href="https://velog.io/@vllyj2260" target="_blank">Velog</a></p>
+        </div>
     </footer>
-
-    <script type="text/javascript">
-        scrollTop('js-button', 200);
-        function scrollTop(elem,duration) {
-            let target = document.getElementById(elem);
-    
-            target.addEventListener('click', function() {
-                let currentY = window.pageYOffset; 
-                let step = duration/currentY > 1 ? 10 : 100;
-                let timeStep = duration/currentY * step;
-                let intervalID = setInterval(scrollUp, timeStep);
-    
-                function scrollUp(){
-                    currentY = window.pageYOffset;
-                    if(currentY === 0) {
-                        clearInterval(intervalID);
-                    } else {
-                        scrollBy( 0, -step );
-                    }
-                }
-            });
-        }
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>

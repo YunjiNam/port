@@ -26,8 +26,23 @@ li {
     text-align: center;
     padding: 0px 50px 0px 50px;
 }
+main {
+    height: 2800px;
+}
 
+#major {
+    display: none;
+}
 
+#beer {
+    display: none;
+}
+#pizza {
+    display: none;
+}
+#coffee {
+    display: none;
+}
 /* scroll-top btn section */
 .scroll-top {
     position: fixed;
@@ -40,6 +55,7 @@ li {
     height: 50px;
     border-radius: 50%;
     border: none;
+    
 }
 .scroll-top:hover {
     cursor: pointer;
@@ -55,6 +71,7 @@ li {
     position: fixed;
     top: 0;
     background-color: #2D2D2D;
+    z-index: 30;
 }
 .h_logo img {
     width: 50px;
@@ -112,22 +129,77 @@ li {
     height: 147px;
     padding: 65px 77px 0px 0px;
 }
-.introduce_warp img:nth-child(1) {
+/* .introduce_warp img:nth-child(1) {
     width: 370px;
     height: 380px;
     padding-top: 40px;
     padding-left: 200px;
-}
+} */
 
 .intro_box p a {
     color: #ffffff;
     text-shadow:-0.5px 0 #8CC270,0.5px 0 #8CC270,0 0.5px #8CC270,-0 -0.5px #8CC270;
 }
-.major:hover,.location:hover,.beer:hover,.music:hover,.movie:hover,.netflix:hover,.watcha:hover,.coffee:hover,.pizza:hover,.insta:hover,.github:hover {
+#s_major:hover,.location:hover,#s_beer:hover,.music:hover,.movie:hover,.netflix:hover,.watcha:hover,#s_coffee:hover,#s_pizza:hover,.insta:hover,.github:hover {
     color: #8CC270;
     cursor: pointer;
     text-shadow:0 0 #8CC270,0 0 #8CC270,0 0 #8CC270,0 0 #8CC270;
 }
+.show_image_box {
+    width: 370px;
+    height: 380px;
+    padding-top: 40px;
+    padding-left: 200px;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+}
+.img_bg {
+    background-color: #ffffff;
+    width: 330px;
+    height: 380px;
+    grid-area: 1 / 2 / 1 / 2;
+    margin-left: 46px;
+}
+.show_image_box img {
+    width: 300px;
+    height: 300px;
+    grid-area: 1 / 2 / 1 / 2;
+    margin-top: 40px;
+}
+.default_img {
+    width: 300px;
+    height: 300px;
+    grid-area: 1 / 2 / 1 / 2;
+    margin-top: 40px;
+    background-image: url("./img/intro_img1@2x.png");
+    background-size: cover;
+}
+/* .insert_img {
+    background-image: url("./img/intro_img1@2x.png");
+    background-size: cover;
+} */
+
+/* .insert_img1 {
+    background-image: url("./img/intro_img1@2x.png");
+    background-size: cover;
+}
+
+.insert_img2 {
+    background-image: url("./img/me@2x.png");
+    background-size: cover;
+}
+.insert_img3 {
+    background-image: url("./img/beer.jpg");
+    background-size: cover;
+}
+.insert_img4 {
+    background-image: url("./img/starbucks@2x.png");
+    background-size: cover;
+}
+.insert_img5 {
+    background-image: url("./img/upp@2x.png");
+    background-size: cover;
+} */
 
 
 /* skill section */
@@ -154,6 +226,14 @@ li {
     align-content: center;
 }
 
+.img_scale {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.img_scale:hover {
+    transform: scale(1.2);
+}
 
 /* project section */
 #project {
@@ -169,8 +249,8 @@ li {
     background-image: url(./img/project_box1@2x.png);
     background-size: contain;
 /*    margin-left: 150px;*/
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 40px;
     text-align: center;
     cursor: pointer;
@@ -186,8 +266,8 @@ li {
     background-image: url(./img/project_box2@2x.png);
     background-size: contain;
     margin-left: 55px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 40px;
     text-align: center;
     cursor: pointer;
@@ -201,8 +281,8 @@ li {
     background-image: url(./img/project_box3@2x.png);
     background-size: contain;
     margin-left: 55px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 40px;
     text-align: center;
     cursor: pointer;
@@ -245,4 +325,45 @@ li {
     grid-area: 1 / 1 / 2 / 4;
     margin-top: 150px;
     margin-left: 300px;
+}
+
+
+/*  */
+.contact_box {
+    width: 1680px;
+    height: 250px;
+    background-color: #ffffff;
+}
+
+.contact_box div {
+    width: 1680px;
+    height: 250px;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+}
+.contact_box p:nth-child(1) {
+    font-size: 107px;
+    font-weight: 900;
+    margin-right: 300px;
+    margin-left: 150px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.contact_box p {
+    font-size: 15px;
+    font-weight: 700;
+    grid-area: 3 / 2 / 4 / 6;
+}
+.contact_box p:nth-child(2) {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.contact_box p:nth-child(3) {
+    grid-area: 3 / 3 / 4 / 4;
+    margin-left: 70px;
+}
+.contact_box p:nth-child(4) {
+    grid-area: 3 / 4 / 4 / 5;
+    margin-left: 30px;
+}
+.contact_box p:nth-child(5) {
+    grid-area: 3 / 5 / 4 / 6;
 }
