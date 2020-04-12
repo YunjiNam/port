@@ -1,3 +1,6 @@
+
+// 스크롤 탑 버튼
+
 scrollTop('js-button', 200);
         function scrollTop(elem,duration) {
             let target = document.getElementById(elem);
@@ -35,6 +38,7 @@ scrollTop('js-button', 200);
 // click_major();
 
 
+// 클릭 이미지 체인지 
 function change_img(event, imagename) {
     var i, tabcontent, tablinks;
     
