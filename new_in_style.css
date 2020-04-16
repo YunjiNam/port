@@ -81,6 +81,13 @@ main {
     padding: 5px 50px 0px 87px;
 }
 
+.js_clock {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    right: 100px; 
+}
 
 /* ------------------------------ cover section */
 .cover {
@@ -141,7 +148,7 @@ main {
     color: #ffffff;
     text-shadow:-0.5px 0 #8CC270,0.5px 0 #8CC270,0 0.5px #8CC270,-0 -0.5px #8CC270;
 }
-#s_major:hover,.location:hover,#s_beer:hover,.music:hover,.movie:hover,.netflix:hover,.watcha:hover,#s_coffee:hover,#s_pizza:hover,.insta:hover,.github:hover {
+#s_major:hover,#s_location:hover,#s_beer:hover,#s_music:hover,#s_movie:hover,.netflix:hover,.watcha:hover,#s_coffee:hover,#s_pizza:hover,.insta:hover,.github:hover {
     color: #8CC270;
     cursor: pointer;
     text-shadow:0 0 #8CC270,0 0 #8CC270,0 0 #8CC270,0 0 #8CC270;
@@ -160,12 +167,14 @@ main {
     height: 380px;
     grid-area: 1 / 2 / 1 / 2;
     margin-left: 46px;
+    border-radius: 40px;
 }
 .show_image_box img {
     width: 300px;
     height: 300px;
     grid-area: 1 / 2 / 1 / 2;
     margin-top: 40px;
+    
 }
 .default_img {
     width: 300px;
@@ -174,6 +183,7 @@ main {
     margin-top: 40px;
     background-image: url("./img/intro_img1@2x.png");
     background-size: cover;
+    
 }
 /* .insert_img {
     background-image: url("./img/intro_img1@2x.png");
@@ -238,18 +248,67 @@ main {
 
 /* ------------------------------ project section */
 #project {
-    display: flex;
     width: 1680px;
     height: 860px;
-    padding-top: 170px;
-    justify-content: center;
+    padding-top: 50px;
 }
-.project_box1 {
+
+.project_box {
+    width: 1200px;
+    height: 200px;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.box_change {
+    background-color: #ffffff;
+    transition-duration: 0.4s;
+}
+
+.proj_title {
+    font-size: 60px;
+    font-weight: 900;
+    color: #ffffff;
+    z-index: 30;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.proj_img {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 40px;
+}
+
+.p1_img { background-color: #E55151; }
+.p2_img { background-color: #40A386; }
+.p3_img { background-color: #F7B706; }
+
+.proj_content {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-left: 550px;
+}
+.text_change {
+    color: #2d2d2d;
+}
+
+/* .project_box1 {
     width: 410px;
     height: 817px;
     background-image: url(./img/project_box1@2x.png);
     background-size: contain;
-/*    margin-left: 150px;*/
     font-size: 14px;
     font-weight: 300;
     line-height: 40px;
@@ -290,7 +349,7 @@ main {
 }
 .project_box3 p {
     padding-top: 394px;
-}
+} */
 
 
 /*  ------------------------------  video section */
@@ -360,6 +419,7 @@ main {
     align-items: center;
     /* grid-area: 1 / 1 / 2 / 3; */
     margin: 150px 0px 150px 150px;
+    border-radius: 40px;
 }
 
 .photo_warp img {

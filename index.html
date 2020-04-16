@@ -35,6 +35,9 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="js_clock">
+                <p>00:00</p>
+            </div>
         </div>
 
         <!-- ------------------------------ main cover section -->
@@ -60,12 +63,12 @@
             <div class="intro_box">
                 <p>Hi? My name is Yunji Nam.<br>
                 I Live in Seoul, South Korea. I’m 25 years old. <br>
-                My Major is <a id="s_major" class="tablinks" onclick="change_img(event, 'major')">Digital Contents Design</a>. <br>
-                I like listening to <a class="music">music</a> And watching <a href="https://watcha.com/ko-KR/contents/mO2p7x5" target="_blank" class="movie">movies</a>. <br>
+                My Major is <a id="s_major" class="tablinks" onmouseover="change_img(event, 'major')" onmouseout="default_img()">Digital Contents Design</a>. <br>
+                I like listening to <a href="https://youtu.be/jpcxOcE4vRo" target="_blank" id="s_music" class="tablinks" onmouseover="change_img(event, 'music')" onmouseout="default_img()">music</a> And watching <a href="https://watcha.com/ko-KR/contents/mO2p7x5" target="_blank" id="s_movie" class="tablinks" onmouseover="change_img(event, 'movie')" onmouseout="default_img()">movies</a>. <br>
                 So I like <a href="https://www.netflix.com/kr/" target="_blank" class="netflix">Netflix</a> and <a href="https://play.watcha.net/start" target="_blank" class="watcha">Watcha Play</a>! <br>
-                My favorite beer is <a id="s_beer" class="tablinks" onclick="change_img(event, 'beer')">Big Wave</a> that to drink at <a class="location">Banpo Han River Park</a>. <br>
-                And I Like coffee! Especially <a id="s_coffee" class="tablinks" onclick="change_img(event, 'coffee')">Starbucks Vanilla Cream Cold Brew</a>. <br>
-                I Like <a id="s_pizza" class="tablinks" onclick="change_img(event, 'pizza')">UPP Pizza</a>(Itaewon).<br>
+                My favorite beer is <a id="s_beer" class="tablinks" onmouseover="change_img(event, 'beer')" onmouseout="default_img()">Big Wave</a> that to drink at <a id="s_location" class="tablinks" onmouseover="change_img(event, 'location')" onmouseout="default_img()">Banpo Han River Park</a>. <br>
+                And I Like coffee! Especially <a id="s_coffee" class="tablinks" onmouseover="change_img(event, 'coffee')" onmouseout="default_img()">Starbucks Vanilla Cream Cold Brew</a>. <br>
+                I Like <a id="s_pizza" class="tablinks" onmouseover="change_img(event, 'pizza')" onmouseout="default_img()">UPP Pizza</a>(Itaewon).<br>
                 My Instagram is <a href="https://www.instagram.com/nnnamn_yj/" target="_blank" class="insta">https://www.instagram.com/nnnamn_yj/</a>.<br>
                 Contact Me <a href="https://github.com/YunjiNam" class="github">Github</a> E-mail yj607252@gmail.com </p>
                 <img src="./img/emoji.png">
@@ -78,7 +81,10 @@
                     <div class="img_bg"></div>
                     <div class="default_img"></div>
                     <img id="major" class="tabcontent" src="./img/dicon.jpg">
+                    <img id="music" class="tabcontent" src="./img/music.png">
+                    <img id="movie" class="tabcontent" src="./img/movie.png">
                     <img id="beer" class="tabcontent" src="./img/beer.jpg">
+                    <img id="location" class="tabcontent" src="./img/banpo.jpg">
                     <img id="coffee" class="tabcontent" src="./img/starbucks@2x.png">
                     <img id="pizza" class="tabcontent" src="./img/upp@2x.png">
                 </div>
@@ -104,7 +110,7 @@
 
         <!-- ------------------------------ project section -->
 
-        <article id="project">
+        <!-- <article id="project">
             <div class="project_box1">
                 <p>But I must explain to you how all this<br>
                     mistaken idea of denouncing pleasure and<br>
@@ -129,6 +135,51 @@
                     happiness. No one rejects, dislikes, or<br>
                     avoids pleasure itself, because it is<br>
                     pleasure, but because those who do</p>
+            </div>
+        </article> -->
+
+        <article id="project">
+            <div class="project_box proj_box1" onmouseover="change_white1()" onmouseout="change_black1()">
+                <div class="proj_title proj_title1">
+                    <p>Project</p>
+                </div>
+                <div class="proj_img p1_img">
+                    <img>
+                </div>
+                <div class="proj_content proj_text1">
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising <br>
+                        pain was born and I will give you a complete account of the system, and expound the actual<br>
+                        teachings of the great explorer of the truth, the master-builder of human happiness. No one <br>
+                        rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do</p>
+                </div>
+            </div>
+            <div class="project_box proj_box2" onmouseover="change_white2()" onmouseout="change_black2()">
+                <div class="proj_title proj_title2">
+                    <p>Project</p>
+                </div>
+                <div class="proj_img p2_img">
+                    <img>
+                </div>
+                <div class="proj_content proj_text2">
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising <br>
+                        pain was born and I will give you a complete account of the system, and expound the actual<br>
+                        teachings of the great explorer of the truth, the master-builder of human happiness. No one <br>
+                        rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do</p>
+                </div>
+            </div>
+            <div class="project_box proj_box3" onmouseover="change_white3()" onmouseout="change_black3()">
+                <div class="proj_title proj_title3">
+                    <p>Project</p>
+                </div>
+                <div class="proj_img p3_img">
+                    <img>
+                </div>
+                <div class="proj_content proj_text3">
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising <br>
+                        pain was born and I will give you a complete account of the system, and expound the actual<br>
+                        teachings of the great explorer of the truth, the master-builder of human happiness. No one <br>
+                        rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do</p>
+                </div>
             </div>
         </article>
         <article id="video" class="video_box">
