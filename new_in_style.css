@@ -263,17 +263,18 @@ main {
     border-radius: 40px;
     cursor: pointer;
     transition-duration: 0.4s;
+    color: #ffffff;
 }
 
 .box_change {
     background-color: #ffffff;
+    color: #2d2d2d;
     transition-duration: 0.4s;
 }
 
 .proj_title {
     font-size: 60px;
     font-weight: 900;
-    color: #ffffff;
     z-index: 30;
     margin-top: 10px;
     margin-left: 10px;
@@ -295,7 +296,6 @@ main {
 
 .proj_content {
     font-size: 12px;
-    color: #ffffff;
     line-height: 30px;
     margin-top: 40px;
     margin-left: 550px;
