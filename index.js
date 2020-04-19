@@ -93,20 +93,20 @@ function default_img() {
 }
 
 //project mouse in out color change
-const project_box1 = document.querySelector('.proj_box1'),
-    project_title1 = project_box1.querySelector('.proj_title1'),
-    project_text1 = project_box1.querySelector('.proj_text1');
+// const project_box1 = document.querySelector('.proj_box1'),
+//     project_title1 = project_box1.querySelector('.proj_title1'),
+//     project_text1 = project_box1.querySelector('.proj_text1');
 
-const project_box2 = document.querySelector('.proj_box2'),
-    project_title2 = project_box2.querySelector('.proj_title2'),
-    project_text2 = project_box2.querySelector('.proj_text2');
+// const project_box2 = document.querySelector('.proj_box2'),
+//     project_title2 = project_box2.querySelector('.proj_title2'),
+//     project_text2 = project_box2.querySelector('.proj_text2');
 
-const project_box3 = document.querySelector('.proj_box3'),
-    project_title3 = project_box3.querySelector('.proj_title3'),
-    project_text3 = project_box3.querySelector('.proj_text3');
+// const project_box3 = document.querySelector('.proj_box3'),
+//     project_title3 = project_box3.querySelector('.proj_title3'),
+//     project_text3 = project_box3.querySelector('.proj_text3');
 
-const change_box = "box_change";
-const change_text = "text_change";
+// const change_box = "box_change";
+// const change_text = "text_change";
 
 // function change_color() {
 //     project_box.classList.toggle(change_box);
@@ -121,38 +121,81 @@ const change_text = "text_change";
 // over_change();
 
 
+// function change_white1() {
+//     project_box1.classList.add(change_box);
+//     // project_title1.classList.add(change_text);
+//     // project_text1.classList.add(change_text);
+// }
+
+// function change_black1() {
+//     project_box1.classList.remove(change_box);
+//     // project_title1.classList.remove(change_text);
+//     // project_text1.classList.remove(change_text);
+// }
+
+// function change_white2() {
+//     project_box2.classList.add(change_box);
+//     // project_title2.classList.add(change_text);
+//     // project_text2.classList.add(change_text);
+// }
+
+// function change_black2() {
+//     project_box2.classList.remove(change_box);
+//     // project_title2.classList.remove(change_text);
+//     // project_text2.classList.remove(change_text);
+// }
+
+// function change_white3() {
+//     project_box3.classList.add(change_box);
+//     // project_title3.classList.add(change_text);
+//     // project_text3.classList.add(change_text);
+// }
+
+// function change_black3() {
+//     project_box3.classList.remove(change_box);
+//     // project_title3.classList.remove(change_text);
+//     // project_text3.classList.remove(change_text);
+// }
+
+
+const project_box1 = document.querySelector('.proj_box1');
+const project_box2 = document.querySelector('.proj_box2');
+const project_box3 = document.querySelector('.proj_box3');
+const change_box = "box_change";
+
+// function handleMouse(e){
+//     project_box1.classList.toggle(change_box)
+
+// }
+
+
+
+// function init(){
+//     window.addEventListener('mouseover', handleMouse);
+// }
+
+// init();
+
 function change_white1() {
     project_box1.classList.add(change_box);
-    project_title1.classList.add(change_text);
-    project_text1.classList.add(change_text);
 }
 
 function change_black1() {
     project_box1.classList.remove(change_box);
-    project_title1.classList.remove(change_text);
-    project_text1.classList.remove(change_text);
 }
 
 function change_white2() {
     project_box2.classList.add(change_box);
-    project_title2.classList.add(change_text);
-    project_text2.classList.add(change_text);
 }
 
 function change_black2() {
     project_box2.classList.remove(change_box);
-    project_title2.classList.remove(change_text);
-    project_text2.classList.remove(change_text);
 }
 
 function change_white3() {
     project_box3.classList.add(change_box);
-    project_title3.classList.add(change_text);
-    project_text3.classList.add(change_text);
 }
 
 function change_black3() {
     project_box3.classList.remove(change_box);
-    project_title3.classList.remove(change_text);
-    project_text3.classList.remove(change_text);
-}
+}         
